@@ -30,7 +30,7 @@ import csv
 st.write("## Show Pervious Data")
 #file1 = open("student_data.csv")
 #df_students = pd.DataFrame(file1)   
-pd.read_csv("student_data.csv")
+df_students = pd.read_csv("student_data.csv")
 st.write(df_students)
 st.write(df_students.shape)
 #file1.close()
