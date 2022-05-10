@@ -27,7 +27,7 @@ st.title("Dexcom Students Data Entry System")
 # print(rows)
 # file.close()
 #######   reading pervious data  #######
-st.write("## Show Students Data")
+
 file1 = open("student_data.csv")
 df_students = pd.DataFrame(file1)   
 #df_students = pd.read_csv("student_data.csv")
@@ -59,7 +59,7 @@ if st.button("Add Student"):
                        "Student_Subject": student_subject})
 
 df_students = pd.DataFrame(get_data())
-#st.write("## Show New Data")
+st.write("## Show Students Data")
 st.write(df_students)
 st.write(df_students.shape)
 
