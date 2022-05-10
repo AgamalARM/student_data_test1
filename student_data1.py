@@ -28,11 +28,12 @@ import csv
 # file.close()
 #######   reading pervious data  #######
 st.write("## Show Pervious Data")
-file1 = open("student_data.csv")
-df_students = pd.DataFrame(file1)   #pd.read_csv("student_data.csv")
+#file1 = open("student_data.csv")
+#df_students = pd.DataFrame(file1)   
+pd.read_csv("student_data.csv")
 st.write(df_students)
 st.write(df_students.shape)
-file1.close()
+#file1.close()
 
 student_id = st.sidebar.text_input("Student ID")
 student_name = st.sidebar.text_input("Student Name")
