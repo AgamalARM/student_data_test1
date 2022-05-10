@@ -34,7 +34,7 @@ df_students = pd.DataFrame(file1)
 # st.write(df_students)
 # st.write(df_students.shape)
 file1.close()
-st.write("### Enter the student data")
+st.sidebar.selectbox("### Select item",(Student data,Teacher data))
 student_id = st.sidebar.text_input("Student ID")
 student_name = st.sidebar.text_input("Student Name")
 student_phone = st.sidebar.text_input("Student Phone Number")
@@ -69,7 +69,7 @@ def convert_df(df_students):
 
 
 csv1 = convert_df(df_students)
-st.write(csv1)
+#st.write(csv1)
 
 file2 = open('student_data.csv')
 df_students.to_csv (r'student_data.csv', index = False, header=True)
