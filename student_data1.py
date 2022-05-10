@@ -34,7 +34,7 @@ df_students = pd.DataFrame(file1)
 # st.write(df_students)
 # st.write(df_students.shape)
 file1.close()
-
+st.write("### Enter the student data")
 student_id = st.sidebar.text_input("Student ID")
 student_name = st.sidebar.text_input("Student Name")
 student_phone = st.sidebar.text_input("Student Phone Number")
@@ -59,7 +59,7 @@ if st.button("Add Student"):
                        "Student_Subject": student_subject})
 
 df_students = pd.DataFrame(get_data())
-st.write("## Show New Data")
+#st.write("## Show New Data")
 st.write(df_students)
 st.write(df_students.shape)
 
