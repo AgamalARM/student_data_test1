@@ -13,7 +13,7 @@ import numpy as np
 import csv
 
 # ###############   Banner ################
-# st.title("Dexcom Students Data Entry System")
+st.title("Dexcom Students Data Entry System")
 # ########   Login ##################
 
 
@@ -27,12 +27,12 @@ import csv
 # print(rows)
 # file.close()
 #######   reading pervious data  #######
-st.write("## Show Pervious Data")
+st.write("## Show Students Data")
 file1 = open("student_data.csv")
 df_students = pd.DataFrame(file1)   
 #df_students = pd.read_csv("student_data.csv")
-st.write(df_students)
-st.write(df_students.shape)
+# st.write(df_students)
+# st.write(df_students.shape)
 file1.close()
 
 student_id = st.sidebar.text_input("Student ID")
